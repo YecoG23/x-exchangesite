@@ -1,0 +1,1 @@
+web: gunicorn exchangeMoney.wsgi --log-file -
