@@ -7,9 +7,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="casa de cambios ejercito yeco">
+  <meta name="title" content="Casa de Cambios Ejercito | Money exchange">
+  <meta name="description" content="Somos una casa de cambio en Miraflores que mas de 2 años de experiencia y nos centramos en que tus operaciones sean seguras y con total confianza">
+  <meta name="keywords" content="cambios AHA, cambios ejercito, casa de cambio miraflores, casa de cambio ejercito, Dólar, Euros, Euro, Rate, Tipo de cambio, precio del dólar, casa de cambio, miraflores, Divisas, Dinero, cambio, Money Exchange">
+  <meta name="robots" content="index"/>
+  <meta name="robots" content="follow"/>
 
   <title>{% block title %} {% endblock title %}</title>
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="icon" href="{% static 'img/favicon.ico' %}"> 
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
 
   <!-- Font Awesome Icons -->
   <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
@@ -24,14 +34,20 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
 
+  <!-- declaring my own css style -->
+  {% block own_style %}
+  {% endblock own_style %}
+
 </head>
 
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">CAMBIOS AHA</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="/static/img/logo-cambios-ejercito.svg" width="200" height="70" alt="">
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -44,7 +60,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Galeria</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contacto</a>
@@ -61,7 +77,7 @@
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">Copyright &copy; 2019 - Cambios AHA</div>
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Casa de cambios Ejercito - Elaborado por <a href="#" class="text-info">yEco</a> </div>
     </div>
   </footer>
 
