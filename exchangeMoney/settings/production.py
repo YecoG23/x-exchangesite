@@ -11,7 +11,7 @@ DEBUG = False
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Allow all hosts, so we can run on PaaS's like Heroku
-ALLOWED_HOSTS = ['cambiosaha.herokuapp.com','www.casadecambiosejercito.com']
+ALLOWED_HOSTS = ['cambiosaha.herokuapp.com','www.cambistaejercito.com']
 
 # Configure the production database using dj_database_url
 import dj_database_url
