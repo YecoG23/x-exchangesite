@@ -8,6 +8,16 @@
 header.masthead {
   background: url(../static/img/bg-notes-us-resize.jpg);
 }
+
+.list-group-flush:first-child .list-group-item:first-child {
+  background-color: #28a745;
+  color: #ffffffc2;
+}
+
+.list-group-flush .list-group-item {
+  background-color: #28a745;
+  color: #ffffffc2;
+}
 </style>
 {% endblock own_style %}
 
@@ -22,8 +32,8 @@ header.masthead {
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 bg-secondary font-weight-light mb-5">Nuestra casa de cambios localizada en Miraflores-Lima brinda a nuestros clientes la seguridad, confianza, mejor precio y amabilidad que nos respalda para el cambio de divisas desde hace dos años de experiencia.</p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Descubre más aqui</a>
+          <p class="text-white-75 bg-secondary font-weight-light mb-5">Nuestra casa de cambios localizada en la Av. El Ejército 735 - Miraflores-Lima Of. 207 brinda a nuestros clientes la seguridad, confianza, mejor precio y amabilidad que los caracteriza desde más de dos años de experiencia en el cambio de divisas.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Descubre más aqui &raquo;</a>
         </div>
       </div>
     </div>
@@ -34,12 +44,51 @@ header.masthead {
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">Fuimos los primeros!</h2>
+          <h2 class="text-white mt-0">¡Servicio Garantizado!</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">
-          ¡Somos pioneros! Fuimos la primera casa de cambios en la Av. Ejercito, Miraflores que desde hace dos años viene ofreciendo a sus clientes seguridad, confianza y el mejor precio para sus transacciones monetarias.</p>
-          <img src="{% static 'img/av-ejercito-google-maps.PNG' %}" class="img-fluid mb-3 img-thumbnail" alt="Responsive image">
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Comenzemos!</a>
+
+          <div class="mb-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">1. Registrados en la <abbr title="Superintendencia de Banca y Seguros">SBS</abbr>.</li>
+            <li class="list-group-item">2. Contamos con la licencia de funcionamiento de la Municipalidad de Miraflores.</li>
+            <li class="list-group-item">3. Registrados en la <abbr title="Superintendencia Nacional de Aduanas y de Administración Tributaria">SUNAT</abbr>.</li>
+            <li class="list-group-item">4. Razon social registrada.
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">
+              Ver
+            </button>
+            </li>
+          </ul>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Registrado en SUNAT</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">NOMBRE COMERCIAL: CAMBIOS EL EJERCITO</li>
+                  <li class="list-group-item">RUC: 10437404955</li>
+                </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+<!--           <p class="text-white-50 mb-4">
+          1. Registrados en la <abbr title="Superintendencia de Banca y Seguros">SBS</abbr> 2. Contamos con la licencia de funcionamiento de la Municipalidad de Miraflores. 3. Registrados en la <abbr title="Superintendencia Nacional de Aduanas y de Administración Tributaria">SUNAT</abbr></p> -->
+
+
+<!--           <img src="{% static 'img/av-ejercito-google-maps.PNG' %}" class="img-fluid mb-3 img-thumbnail" alt="Responsive image"> -->
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">¡Comenzemos!</a>
         </div>
       </div>
     </div>
@@ -48,28 +97,28 @@ header.masthead {
   <!-- Services Section -->
   <section class="page-section" id="services">
     <div class="container">
-      <h2 class="text-center mt-0">A tu servicio</h2>
+      <h2 class="text-center mt-0">Estamos a tu servicio</h2>
       <hr class="divider my-4">
       <div class="row">
         <div class="col-lg-4 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-exchange-alt text-primary mb-4"></i>
             <h3 class="h4 mb-2">Cambio de divisas</h3>
-            <p class="text-muted mb-0">Ahora es más rápido y eficiente realizar sus cambios de monedas internacionales, Soles <img src="{% static 'img/Peru-flag.png' %}" height="22" width="22">, Dolar <img src="{% static 'img/US-flag.png' %}" height="22" width="22">, Euro <img src="{% static 'img/European-flag.png' %}" height="22" width="22">, Real <img src="{% static 'img/Brazil-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Chile-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Argentina-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Colombia-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Mexico-flag.png' %}" height="22" width="22">, Libras <img src="{% static 'img/UK-flag.png' %}" height="22" width="22">, Dolar Canadiense <img src="{% static 'img/Canada-flag.png' %}" height="22" width="22"> y otros. <a href="#contact"> Comuniquese</a> con nosotros para brindarle una cotizacion actual, segura y confiable.</p>
+            <p class="text-muted mb-0">Ahora es más rápido y eficiente realizar sus cambios de monedas internacionales, Soles <img src="{% static 'img/Peru-flag.png' %}" height="22" width="22">, Dolar <img src="{% static 'img/US-flag.png' %}" height="22" width="22">, Euro <img src="{% static 'img/European-flag.png' %}" height="22" width="22">, Real <img src="{% static 'img/Brazil-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Chile-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Argentina-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Colombia-flag.png' %}" height="22" width="22">, Peso <img src="{% static 'img/Mexico-flag.png' %}" height="22" width="22">, Libras <img src="{% static 'img/UK-flag.png' %}" height="22" width="22">, Dolar Canadiense <img src="{% static 'img/Canada-flag.png' %}" height="22" width="22"> y otros. <a href="#contact"> Comuníquese</a> con nosotros para brindarle una cotización actual, segura y confiable.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
             <h3 class="h4 mb-2">Trabajamos online</h3>
-            <p class="text-muted mb-0">La operacion la puedes realizar desde la comodidad de su casa, nos realiza el deposito a nuestras cuentas (Soles o Dolares) y nosotros le depositamos a la cuenta que nos indiques. <i class="far fa-credit-card text-primary"></i></p>
+            <p class="text-muted mb-0">La operación la puedes realizar desde la comodidad de su casa, nos realiza el deposito a nuestras cuentas (Soles o Dólares) y nosotros le depositamos a la cuenta que nos indiques. <i class="far fa-credit-card text-primary"></i></p>
           </div>
         </div>
         <div class="col-lg-4 col-md-12 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-comments-dollar text-primary mb-4"></i>
             <h3 class="h4 mb-2">Consultas online</h3>
-            <p class="text-muted mb-0">Puedes contactarnos mediante whatsapp o llamada telefonica para saber nuestras tasas de cambio al dia <i class="far fa-calendar-alt text-primary"></i> o puede acercarte directamente a nuestro <a href="#portfolio"> local.</a></p>
+            <p class="text-muted mb-0">Puedes contactarnos mediante WhatsApp o llamada telefónica para saber nuestras tasas de cambio al día <i class="far fa-calendar-alt text-primary"></i> o puede acercarte directamente a nuestro <a href="#portfolio"> local.</a></p>
           </div>
         </div>
         </div>
@@ -84,34 +133,34 @@ header.masthead {
       <hr class="divider my-4">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis_bcp.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis_bcp_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis-bcp.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis-bcp-thumbnail.jpg' %}">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Frontis del Local
+                Localización
               </div>
               <div class="project-name">
-                Nos encontramos al lado del BCP
+                Al lado del BCP de la Av. El Ejército
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis_1er_piso.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis_1er_piso_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/entrada-primer-piso.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/entrada-primer-piso-thumbnail.jpg' %}">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Frontis del Local
               </div>
               <div class="project-name">
-                Vista frontal del local 1er piso
+                Vista lateral entrada 1er piso
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/entrada_1er_piso.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/entrada_1er_piso_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis-primer-piso.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis-primer-piso-thumbnail.jpg' %}">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Frontis del Local
@@ -123,37 +172,37 @@ header.masthead {
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/escaleras_2do_piso.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/escaleras_2do_piso_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/entrada-segundo-piso.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/entrada-segundo-piso-thumbnail.jpg' %}">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Segundo piso
               </div>
               <div class="project-name">
-                Escaleras al 2do piso
+                Puerta de entrada 2do piso
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/entrada_2do_piso.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/entrada_2do_piso_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis-ventanillas.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis-ventanillas-thumbnail.jpg' %}">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
-                Segundo piso
+                Local de atención
               </div>
               <div class="project-name">
-                Entrada a local 2do piso
+                Ventanillas de atención
               </div>
             </div>
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/ventana_atencion.jpeg' %}">
-            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/ventana_atencion_thumbnail.jpg' %}">
+          <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/frontis-ventanillas-3.jpg' %}">
+            <img class="img-fluid img-thumbnail" src="{% static 'img/portfolio/thumbnails/frontis-ventanillas-3-thumbnail.jpg' %}">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
-                Local de atencion
+                Local de atención
               </div>
               <div class="project-name">
                 Atencion en 3 ventanillas
@@ -178,9 +227,9 @@ header.masthead {
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Mantente en contacto!</h2>
+          <h2 class="mt-0">¡Mantente en contacto!</h2>
           <hr class="divider my-4">
-          <p class="text-muted mb-5">Nos encontramos en la Av. del Ejercito 735, Miraflores, oficina 207-2do piso. Aqui encuentran nuestro whatsapp para poder comunicarse con nosotros!</p>
+          <p class="text-muted mb-5">Nos encontramos en la Av. El Ejército 735, Miraflores, oficina 207-2do piso. Aquí encuentran nuestro WhatsApp para comunicarse con nosotros.</p>
         </div>
       </div>
       <div class="row mt-0">
@@ -192,7 +241,7 @@ header.masthead {
         <div class="col-lg-4 col-sm-6 mr-auto text-center mt-3">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
           <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contacto@casadecambiosejercito.com">contacto@casadecambiosejercito.com</a>
+          <a class="d-block" href="mailto:contacto@cambistaejercito.com">contacto@cambistaejercito.com</a>
         </div>
       </div>
         <div class="row mt-5">
